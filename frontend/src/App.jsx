@@ -25,7 +25,7 @@ import {
 import { Delete, Edit } from '@mui/icons-material';
 import axios from 'axios';
 
-const API_URL = import.meta.env.VITE_BACKEND_URL; // Backend API URL
+const API_URL = 'http://localhost:5000/api/contacts'; // Backend API URL
 
 const App = () => {
   console.log(API_URL);
