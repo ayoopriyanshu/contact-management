@@ -5,6 +5,11 @@ This is a simple Contact Management Feature built using **Node.js**, **React** a
 >Try App- 
 
 ### Start the app
+Create a .env file in root and add these variables
+```shell
+PORT=5000
+MONGO_URI=[*Your Mongo URL*]
+```
 In the root
 ```shell
 npm run build
