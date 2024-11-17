@@ -76,12 +76,7 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      if (editId) {
-        await axios.put(`${API_URL}/${editId}`, form);
-        setEditId(null);
-      } else {
-        await axios.post(API_URL, form);
-      }
+      await axios.post(API_URL, form);
       setForm({
         firstName: '',
         lastName: '',
