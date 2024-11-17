@@ -2,13 +2,14 @@
 
 This is a simple Contact Management Feature built using **Node.js**, **React** and **MongoDB**. It allows users to manage contact information with basic CRUD (Create, Read, Update, Delete) functionality. The project's frontend is designed using Material UI to handle the update, delete and add contact in real time.
 
->Try App- 
+>Try App- https://contact-management-d6q1.onrender.com/
 
 ### Start the app
 Create a .env file in root and add these variables
 ```shell
 PORT=5000
 MONGO_URI=[*Your Mongo URL*]
+VITE_BACKEND_URL='http://localhost:5000/api/contacts'
 ```
 In the root
 ```shell
