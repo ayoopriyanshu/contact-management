@@ -28,6 +28,7 @@ import axios from 'axios';
 const API_URL = import.meta.env.VITE_BACKEND_URL; // Backend API URL
 
 const App = () => {
+  console.log(API_URL);
   return (
     <Router>
       {/* Navigation Bar */}
@@ -252,8 +253,9 @@ const ContactList = () => {
                 <TableCell>
                   {contact.edited ? (
                     <div>
+                      Yes
                       <Tooltip title={`Updated on: ${new Date(contact.updatedAt).toLocaleString()}`}>
-                        <InfoIcon style={{ cursor: 'pointer' }} />
+                        <InfoIcon style={{ cursor: 'pointer', fontSize: 17 }} />
                       </Tooltip>
                     </div>
                   ) : (

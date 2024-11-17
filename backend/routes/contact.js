@@ -27,11 +27,11 @@ router.get('/', async (req, res) => {
 // Update a contact
 router.put('/:id', async (req, res) => {
     const { id } = req.params;
-    const updatedContact = req.body;
+    const updatedData = req.body;
     try {
-        updatedContact.updatedAt = Date.now();
-        updatedContact.edited = true;
-        const updatedContact = await Contact.findByIdAndUpdate(id, updatedContact, { new: true });
+        updatedData.updatedAt = Date.now();
+        updatedData.edited = true;
+        const updatedContact = await Contact.findByIdAndUpdate(id, updatedData, { new: true });
         res.status(200).json(updatedContact);
     } catch (error) {
         res.status(400).json({ error: error.message });
