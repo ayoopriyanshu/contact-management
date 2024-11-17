@@ -9,6 +9,7 @@ Create a .env file in root and add these variables
 ```shell
 PORT=5000
 MONGO_URI=[*Your Mongo URL*]
+VITE_BACKEND_URL='http://localhost:5000/api/contacts'
 ```
 In the root
 ```shell
