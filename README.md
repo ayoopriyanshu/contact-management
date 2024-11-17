@@ -4,31 +4,11 @@ This is a simple Contact Management Feature built using **Node.js**, **React** a
 
 >Try App- 
 
-### Setup .env file
-
-```shell
-cd backend
-npm run server
-```
-ADD THESE VARIABLES TO .env FILE IN BACKEND FOLDER
-```js
-PORT= ["GIVE A PORT NUMBER"]
-MONGO_DB_URI= ["PROVIDE THE DATABASE URL"]
-```
-
-```shell
-cd frontend
-```
-ADD THIS VARIABLES TO .env FILE IN FRONTEND FOLDER
-```js
-VITE_BACKEND_URL= ["BACKEND API URL"]
-```
-
 ### Start the app
 
 ```shell
-cd frontend
-npm run dev
+npm run build
+npm start
 ```
 
 
