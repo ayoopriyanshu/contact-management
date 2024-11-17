@@ -2,16 +2,13 @@ import mongoose from "mongoose";
 
 const contactSchema = new mongoose.Schema({
     firstName: {
-        type: String,
-        required: true
+        type: String
     },
     lastName: {
         type: String
     },
     email: {
-        type: String,
-        required: true,
-        unique: true
+        type: String
     },
     phoneNumber: {
         type: String
