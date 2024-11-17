@@ -5,7 +5,7 @@ This is a simple Contact Management Feature built using **Node.js**, **React** a
 >Try App- 
 
 ### Start the app
-
+In the root
 ```shell
 npm run build
 npm start
