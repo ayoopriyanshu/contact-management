@@ -168,6 +168,8 @@ const ContactList = () => {
     phoneNumber: '',
     company: '',
     jobTitle: '',
+    edited: false,
+    updatedAt: ''
   });
   const [showUpdateDialog, setShowUpdateDialog] = useState(false);
   const [editId, setEditId] = useState(null);
